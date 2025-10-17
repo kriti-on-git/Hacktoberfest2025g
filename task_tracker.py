@@ -14,6 +14,7 @@ def save_tasks(tasks):
     with open(TASK_FILE, "w") as f:
         json.dump(tasks, f, indent=4)
 
+
 def add_task():
     title = input("Enter task title: ").strip()
     if title:
